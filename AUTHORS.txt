@@ -1,0 +1,8 @@
+(* OASIS_START *)
+(* DO NOT EDIT (digest: 6233f0669cbe584ab8570b12eaa756ea) *)
+
+Authors of pixos:
+
+* Paul Barbenne
+
+(* OASIS_STOP *)
