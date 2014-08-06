@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: 8912ec978c2a4a342fd4ac3dd4568043)
+# DO NOT EDIT (digest: 513f29034b14b328295c82b3a09cad7e)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -13,7 +13,11 @@
 ".git": not_hygienic
 "_darcs": -traverse
 "_darcs": not_hygienic
+# Library simplist
+"src/simplist/simplist.cmxs": use_simplist
 # Executable pixos
 <src/main.{native,byte}>: pkg_ocsfml
+<src/main.{native,byte}>: use_simplist
 <src/*.ml{,i}>: pkg_ocsfml
+<src/*.ml{,i}>: use_simplist
 # OASIS_STOP

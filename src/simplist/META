@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: 0e73bde015695255f02a2a39156c50cd)
+version = "0.0"
+description = "Test pour un jeu de type sandbox..."
+archive(byte) = "simplist.cma"
+archive(byte, plugin) = "simplist.cma"
+archive(native) = "simplist.cmxa"
+archive(native, plugin) = "simplist.cmxs"
+exists_if = "simplist.cma"
+# OASIS_STOP
+

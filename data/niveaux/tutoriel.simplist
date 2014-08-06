@@ -1,0 +1,2 @@
+(let tuto1 (do-file "tuto_1.simplist"))
+(campagne "tutoriel" '(tuto1))

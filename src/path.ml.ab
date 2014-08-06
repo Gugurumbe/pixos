@@ -1,1 +1,3 @@
-let datadir = "$datadir" ;;
+let datadir = Filename.concat "$datadir" "$pkg_name" ;;
+let lvldir = Filename.concat datadir "niveaux" ;;
+let lvllist = Filename.concat lvldir "liste.simplist" ;;
