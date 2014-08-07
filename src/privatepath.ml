@@ -7,4 +7,4 @@ let userdir = Filename.concat
   ".pixos" ;;
 
 if not (Sys.file_exists userdir) 
-then Unix.mkdir userdir 0o640 ;;
+then Unix.mkdir userdir 0o751 ;;
