@@ -1,0 +1,9 @@
+(let masque_murs (concat-string
+		  "   XX"
+		  "    X"
+		  "   XX"))
+(let depart '(0 0))
+(let caisses '('(1 1)))
+(let objectifs '('(2 1)))
+(let descr "À peine plus difficile ! Poussez la caisse sur le drapeau vert...")
+'('(5 3) masque_murs depart caisses objectifs descr)

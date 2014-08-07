@@ -1,2 +1,3 @@
 (let tuto1 (do-file "tuto_1.simplist"))
-(campagne "tutoriel" '(tuto1))
+(let tuto2 (do-file "tuto_2.simplist"))
+(campagne "tutoriel" '(tuto1 tuto2))

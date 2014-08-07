@@ -1,5 +1,5 @@
 (* OASIS_START *)
-(* DO NOT EDIT (digest: 8211cf13434a19e6a5f519353250dcf2) *)
+(* DO NOT EDIT (digest: bd99927e92de7ee007dd66747df42d4f) *)
 
 This is the INSTALL file for the pixos distribution.
 
@@ -13,7 +13,7 @@ In order to compile this package, you will need:
 
 * ocaml
 * findlib
-* ocsfml for executable pixos
+* tsdl for executable pixos
 
 Installing
 ==========

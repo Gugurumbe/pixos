@@ -19,13 +19,13 @@ let dofile = function
     end
 | _ -> failwith "Mauvais usage de dofile"
 ;;
-let campagne = function
-  | [String nom ; List niveaux] ->
-    begin
-      print_endline ("Ajout de la campagne "^nom) ;
-      List []
-    end
-  | _ -> failwith "Mauvais usage de campagne."
+let table_campagnes = Hashtbl.create 1 ;;
+let campagne arguments =
+  let c = Niveaux.interpreter_campagne arguments in
+  Hashtbl.add table_campagnes c.Niveaux.nom c ;
+  print_endline ("Ajout de la campagne "^c.Niveaux.nom^" : ") ;
+  List.iter (Niveaux.presenter) c.Niveaux.niveaux ;
+  List []
 ;;
 interprete.add "do-file" (Function dofile) ;;
 interprete.add "campagne" (Function campagne) ;;
