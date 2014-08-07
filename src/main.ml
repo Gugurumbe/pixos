@@ -1,4 +1,7 @@
+print_endline "Répertoire de l'application : " ;;
 print_endline Path.datadir ;;
+print_endline "Répertoire de l'utilisateur : " ;;
+print_endline Path.userdir ;;
 let rec read_all fichier =
   try
     let ligne = input_line fichier in
