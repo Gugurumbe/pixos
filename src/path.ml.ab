@@ -1,3 +1,7 @@
-let datadir = Filename.concat "$datadir" "$pkg_name" ;;
+let datadir = 
+  match Filename.basename Sys.argv.(0) with
+  | "main.native"
+  | "main.byte" -> "data"
+  | _ -> Filename.concat "$datadir" "$pkg_name" ;;
 let lvldir = Filename.concat datadir "niveaux" ;;
 let lvllist = Filename.concat lvldir "liste.simplist" ;;
