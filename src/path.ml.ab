@@ -6,3 +6,4 @@ let datadir =
 let lvldir = Filename.concat datadir "niveaux" ;;
 let lvllist = Filename.concat lvldir "liste.simplist" ;;
 let userdir = Privatepath.userdir ;;
+let userprogress = Privatepath.userprogress ;;

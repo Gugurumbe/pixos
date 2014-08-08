@@ -1,5 +1,5 @@
 let preparer_niveau campagne okref numsuivant =
-  let chemin_sauvegarde = Filename.concat Path.userdir "progression" in
+  let chemin_sauvegarde = Path.userprogress in
   let chemin_fichier = Filename.concat chemin_sauvegarde 
     (campagne.Niveaux.nom) in
   let numero = 
