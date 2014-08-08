@@ -1,8 +1,8 @@
 (* OASIS_START *)
-(* DO NOT EDIT (digest: a3fb7dc4265059841ad1bd860be8c630) *)
+(* DO NOT EDIT (digest: cb191e2e391ba13252558fae6380d64b) *)
 
-pixos - Test pour un jeu de type sandbox...
-===========================================
+pixos - Jeu de type sokoban, avec exploitation d'oasis.
+=======================================================
 
 See the file [INSTALL.txt](INSTALL.txt) for building and installation
 instructions.

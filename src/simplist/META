@@ -1,7 +1,7 @@
 # OASIS_START
-# DO NOT EDIT (digest: 0e73bde015695255f02a2a39156c50cd)
-version = "0.0"
-description = "Test pour un jeu de type sandbox..."
+# DO NOT EDIT (digest: 67c1e26afcd011ebb4f7e1e6f5f198bb)
+version = "0.1"
+description = "Jeu de type sokoban, avec exploitation d'oasis."
 archive(byte) = "simplist.cma"
 archive(byte, plugin) = "simplist.cma"
 archive(native) = "simplist.cmxa"
