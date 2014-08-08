@@ -26,8 +26,8 @@ let table_campagnes = Hashtbl.create 1 ;;
 let campagne arguments =
   let c = Niveaux.interpreter_campagne arguments in
   Hashtbl.add table_campagnes c.Niveaux.nom c ;
-  print_endline ("Ajout de la campagne "^c.Niveaux.nom^" : ") ;
-  List.iter (Niveaux.presenter) c.Niveaux.niveaux ;
+  (*print_endline ("Ajout de la campagne "^c.Niveaux.nom^" : ") ;
+  List.iter (Niveaux.presenter) c.Niveaux.niveaux ; *)
   List []
 ;;
 interprete.add "do-file" (Function dofile) ;;
@@ -36,5 +36,13 @@ interprete.add "campagne" (Function campagne) ;;
 let f = open_in (Path.lvllist) ;;
 interprete.eval (read_all f) ;;
 close_in f ;;
-print_endline "Interprétation réussie !" ;;
-      
+(*print_endline "Interprétation réussie !" ;;*)
+
+(* Récupération du niveau *)
+let ok = ref true  ;;
+let nivsuivant = ref 0 ;;
+let niveau = ref (Preparateur.preparer table_campagnes ok nivsuivant) ;;
+while !ok do
+  Joueur.jouer !niveau ok (!nivsuivant + 1) ;
+  if !ok then niveau := Preparateur.preparer table_campagnes ok nivsuivant
+done ;;
